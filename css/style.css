@@ -36,7 +36,7 @@ header nav div a:hover{
 
 .btn{
     color: rgba(255, 222, 172, 0.947);
-    border: 2px solid rgba(255, 222, 172, 0.947);
+    border: 2px solid rgba(255, 222, 172, 0.947)!important;
 }
 .btn:hover{
     color:brown;
@@ -249,7 +249,7 @@ footer{
     line-height: 700px;
 }
 .principios{
-    display: flex;
+    
 }
 .parrafo-principios{
     text-align: center;
@@ -258,7 +258,9 @@ footer{
 
 .comienzos{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 }
 .imagen-comienzos{
     display: flex;
@@ -281,21 +283,19 @@ footer{
     .parrafo-comienzos{
     width: 500px;
     font-size: 20px;
-}
+    }
     .imagen-comienzos{
     width: 500px;
     height: 650px;
-    margin: 20px;
-}
+    }
 }
 
 @media screen and (max-width: 1245px){
     .imagen-comienzos{
     width: 400px;
     height: 500px;
-    
-}
-    .imagen-principios{
+    }
+    .moto{
         width: 500px;
     }
 }
@@ -310,12 +310,7 @@ footer{
         line-height: 30px;
     }
 }
-@media screen and (max-width: 1000px){
-    .parrafo-comienzos{
-    width: 400px;
-    font-size: 20px;
-}
-}
+
 @media screen and (max-width: 1007px){
     .grid-container{
      display: flex;
@@ -326,7 +321,34 @@ footer{
     .img-nosotros{
     height: 200px;
   }
-   
+
+@media screen and (max-width: 1000px){
+    .parrafo-comienzos{
+    width: 400px;
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 880px){
+    .imagen-comienzos{
+    width: 300px;
+    height: 400px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .parrafo-comienzos{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .imagen-comienzos{
+    width: 225px;
+    height: 300px;
+    }
+}
+
   @media screen and (max-width: 672px){
     .productos2{
     justify-content: center;
@@ -336,21 +358,52 @@ footer{
         text-align: center;  
     }
   }
+
   @media screen and (max-width: 600px){
     .img-nosotros{
     display: none;
     }
+    .parrafo-comienzos{
+        width: 250px;
+    }
   }
+
+  @media screen and (max-width: 530px){
+    .imagen-comienzos{
+    width: 205px;
+    height: 225px;
+    }
+  }
+
+   @media screen and (max-width: 500px){
+    .parrafo-principios{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+    }
+    .moto{
+        width: 300px;
+
+        justify-content: center;
+    }
+    .sub-comienzos{
+        font-size: 30px;
+    }
+    .subtitulo-comienzos{
+        font-size: 40px;
+    }
+
+  }
+
   @media screen and (max-width: 474px){
     .titulo-nosotros{
         font-size: 50px;
     }
   }
-    /* header{
-    text-align: center;
-    } */
+
     @media screen and (max-width: 400px){
     .nosotros{
     justify-content: center;
     }
+    
   }
