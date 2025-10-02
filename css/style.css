@@ -1,3 +1,10 @@
+/*--------- FUENTES ----------*/
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+
+
+
 /*----------RESET-----------*/
 *{
     margin: 0;
@@ -5,7 +12,7 @@
     box-sizing: border-box;
 }
 
-
+    
 
 
 /*----------Body------------*/
@@ -28,10 +35,6 @@ header{
 }
 header nav div a{
     margin-right: 50px;
-}
-
-header nav div a:hover{
-    color: rgba(255, 222, 172, 0.947);
 }
 
 .btn{
@@ -68,10 +71,7 @@ h1{
 h2{
     font-size: 50px;
 }
-.subtitulo{
-    text-align: center;
-    margin: 80px;
-}
+
 .nosotros{
     display: flex;
     margin: 100px;
@@ -79,7 +79,12 @@ h2{
 .nosotros div{
     margin: 20px;
 }
-.link-nosotros{
+
+.nosotros div p{
+    justify-content: center;
+}
+
+.nosotros div a{
     text-decoration: none;
     color:  rgb(255, 196, 0);
     background-color: brown;
@@ -91,32 +96,40 @@ h2{
     display: flex;
     align-items: center;
 }
-.link-nosotros:hover{
+
+.nosotros div a:hover{
     color: rgb(255, 232, 197);
 }
-.img-nosotros{
+
+.nosotros div img{
     height: 400px;
 }
-.parrafo-nosotros{
-    justify-content: center;
-}
 
-h3{
-    font-size: 40px;
+
+.nuestros-productos h2{
     text-align: center;
+    margin: 80px;
 }
 
-.ver-mas{
+.nuestros-productos div a{
     color:   rgb(255, 222, 172);
     background-color: brown;
     border-radius: 10px;
     padding: 5px;
     width: 100%;
 }
-.ver-mas:hover{
+
+.nuestros-productos div a:hover{
     background-color: bisque;
     color: brown;
 }
+
+.nuestros-productos .productos2 div img{
+    display: flex;
+    width: 300px;
+
+}
+
 main section div a{
     text-decoration: none;
 }
@@ -134,13 +147,10 @@ main section div a{
     margin: 13px;
     border: 5px solid brown;
 }
-.division-productos h3{
+.nuestros-productos div div h3{
+    font-size: 40px;
+    text-align: center;
     margin: 25px;
-}
-.imagen-producto{
-    display: flex;
-    width: 300px;
-
 }
 
 p{
@@ -160,9 +170,6 @@ footer{
     font-size: larger;
     
 
-}
-.instagram{
-    height: 50px;
 }
 
 .iconos{
@@ -184,20 +191,7 @@ footer{
 }
 
 
-                                                /* -----------NOSOTROS------------- */
-
-
-.historia-principio{
-    margin: 40px;
-}
-
-.parrafo-historia{
-    font-size: 25px;
-}
-.historia{
-    height: 700px;
-    width: 100%;
-}
+/* -----------NOSOTROS------------- */
 .principio{
     background-image: url(../img/Historia.jpg);
     height: 600px;
@@ -212,9 +206,21 @@ footer{
     line-height: 700px;
 }
 
+.historia-principio{
+    margin: 40px;
+}
+
+.parrafo-historia{
+    font-size: 25px;
+}
+
 .parrafo-principios{
     text-align: center;
     line-height: 50px;
+}
+
+.subtitulo-comienzos{
+    text-align: center;
 }
 
 .comienzos{
@@ -228,9 +234,6 @@ footer{
     width: 600px;
     height: 700px;
     margin: 20px;
-}
-.subtitulo-comienzos{
-    text-align: center;
 }
 .parrafo-comienzos{
     flex-direction: column;

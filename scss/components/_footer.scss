@@ -1,0 +1,61 @@
+/*------------FOOTER-----------*/
+
+footer{
+    background-color: brown;
+    font-size: larger;
+    div{
+        div{
+            img{
+
+            }
+        }
+        div{
+            h2{
+
+            }
+            a{
+            text-decoration: none;
+            margin: 20px;
+            }
+            a{
+            text-decoration: none;
+            margin: 20px;
+            }
+        }
+        div{
+            h2{
+
+            }
+            a{
+            text-decoration: none;
+            margin: 20px;
+            }
+        }
+        div{
+            h2{
+
+            }
+            p{
+
+            }
+        }
+    }
+}
+
+.iconos{
+    color:  rgb(255, 222, 172);
+    font-size: 40px;
+    &:hover{
+        color: rgb(255, 196, 0);
+    }
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid.item{
+    padding: 10px;
+    margin: 10px;
+}

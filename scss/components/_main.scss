@@ -1,0 +1,218 @@
+/*------------Main------------*/
+
+.medialunas{
+    width: 1525px;
+    height: 700px;
+    background-position: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+h2{
+    font-size: 50px;
+}
+
+.nosotros{
+    display: flex;
+    margin: 100px;
+    div{
+    margin: 20px;
+        h2{
+
+        }
+        p{
+         justify-content: center;   
+        }
+        a{
+        text-decoration: none;
+        color:  rgb(255, 196, 0);
+        background-color: brown;
+        border-radius: 10px;
+        padding: 5px;
+        height: 30px;
+        width: 80px;
+        margin: 60px;
+        display: flex;
+        align-items: center;
+            &:hover{
+                color: rgb(255, 232, 197);
+            }
+        }
+    }
+    img{
+     height: 400px;
+    }
+}
+
+.nuestros-productos{
+    h2{
+    text-align: center;
+    margin: 80px;
+    }
+    div{
+        div{
+            img{
+            display: flex;
+            width: 300px;
+            }
+            h3{
+            font-size: 40px;
+            text-align: center;
+            margin: 25px;
+            }
+            a{
+            color:   rgb(255, 222, 172);
+            background-color: brown;
+            border-radius: 10px;
+            padding: 5px;
+            width: 100%;
+               &:hover{
+                background-color: bisque;
+                color: brown;
+               }
+            }
+        }
+        div{
+            img{
+            
+            }
+            h3{
+            font-size: 40px;
+            text-align: center;
+            margin: 25px;
+            }
+            a{
+            color:   rgb(255, 222, 172);
+            background-color: brown;
+            border-radius: 10px;
+            padding: 5px;
+            width: 100%;
+                &:hover{
+                background-color: bisque;
+                color: brown;
+               }
+            }
+        }
+        div{
+            img{
+
+            }
+            h3{
+            font-size: 40px;
+            text-align: center;
+            margin: 25px;
+            }
+            a{
+            color:   rgb(255, 222, 172);
+            background-color: brown;
+            border-radius: 10px;
+            padding: 5px;
+            width: 100%;
+                &:hover{
+                background-color: bisque;
+                color: brown;
+               }
+            }
+        }
+        div{
+            img{
+
+            }
+            h3{
+            font-size: 40px;
+            text-align: center;
+            margin: 25px;
+            }
+            a{
+            color:   rgb(255, 222, 172);
+            background-color: brown;
+            border-radius: 10px;
+            padding: 5px;
+            width: 100%;
+                &:hover{
+                background-color: bisque;
+                color: brown;
+               }
+            }
+        }
+    }
+}
+
+main section div a{
+    text-decoration: none;
+}
+
+.productos2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.division-productos{
+    width: 310px;
+    height: 450px;
+    text-align: center;
+    margin: 13px;
+    border: 5px solid brown;
+}
+
+p{
+    font-size: 20px;
+}
+
+ /* -----------NOSOTROS------------- */
+
+ .principio{
+    background-image: url(../img/Historia.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.titulo-nosotros{
+    font-size: 70px;
+    color: black;
+    line-height: 700px;
+}
+
+.historia-principio{
+    margin: 40px;
+}
+
+.parrafo-historia{
+    font-size: 25px;
+}
+
+.parrafo-principios{
+    text-align: center;
+    line-height: 50px;
+}
+
+.subtitulo-comienzos{
+    text-align: center;
+}
+
+.comienzos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.imagen-comienzos{
+    display: flex;
+    width: 600px;
+    height: 700px;
+    margin: 20px;
+}
+
+.parrafo-comienzos{
+    flex-direction: column;
+    width: 650px;
+    font-size: 22px;
+}
