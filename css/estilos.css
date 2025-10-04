@@ -190,7 +190,7 @@ p {
   background-attachment: fixed;
 }
 
-.titulo-nosotros {
+.principio h1 {
   font-size: 70px;
   color: black;
   line-height: 700px;
@@ -230,6 +230,135 @@ p {
   flex-direction: column;
   width: 650px;
   font-size: 22px;
+}
+
+/* ------------------CATALOGO------------------ */
+.grid-catalogo {
+  margin: 55px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 126px);
+  gap: 10px;
+}
+
+.item-catalogo {
+  height: 400px;
+  position: relative;
+}
+
+.item-catalogo h3 {
+  position: absolute;
+  bottom: -1;
+  color: rgb(255, 222, 172);
+  background-color: rgba(165, 42, 42, 0.822);
+  width: 100%;
+  padding: 5px;
+}
+
+.grid-catalogo di img {
+  width: 100%;
+  height: 100%;
+}
+.grid-catalogo {
+  width: 100%;
+  height: 100%;
+}
+
+.panificados {
+  margin: 15px;
+}
+
+.catalogo-facturas {
+  margin: 55px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 126px);
+  gap: 10px;
+}
+
+.catalogo-facturas div img {
+  width: 100%;
+  height: 100%;
+}
+
+.catalogo-tartas {
+  margin: 55px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 126px);
+  gap: 10px;
+}
+
+.catalogo-tartas div img {
+  width: 100%;
+  height: 100%;
+}
+
+.catalogo-galletitas {
+  margin: 55px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 126px);
+  gap: 10px;
+}
+
+.catalogo-galletitas div img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------PEDIDOS------------------ */
+.pedidos {
+  background-image: url(../img/pedidos.png);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ----------------CONTACTO---------------- */
+.imagen-contacto {
+  background-image: url(../img/contacto.png);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.imagen-contacto h1 {
+  font-size: 70px;
+  line-height: 700px;
+  text-align: left;
+  padding: 50px;
+}
+
+.referencias {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 80px;
+}
+
+.referencias ul li {
+  text-decoration: none;
+}
+
+.datos {
+  margin: 30px;
+}
+
+.datos a {
+  color: brown;
+}
+.datos a:hover {
+  color: rgb(255, 196, 0);
+}
+
+.grid-contenedor {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*------------FOOTER-----------*/
@@ -373,7 +502,7 @@ footer div div a {
   }
 }
 @media screen and (max-width: 474px) {
-  .titulo-nosotros {
+  .principio h1 {
     font-size: 50px;
   }
 }

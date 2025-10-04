@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    
+
     <header>
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
@@ -31,8 +31,8 @@
                             <a class="nav-link" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                             <a class="nav-link" href="./pedidos.html">Pedidos</a>
-                         </li>
+                            <a class="nav-link" href="./pedidos.html">Pedidos</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -63,29 +63,56 @@
 
     </header>
     <main>
-        <h1>Contactenos</h1>
-        <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202.46368863847468!2d-65.0144749!3d-32.3359519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2e136bfed4b29%3A0x30258246167a598b!2sPanader%C3%ADa%20Mediterranea!5e1!3m2!1ses!2sar!4v1758372641682!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="imagen-contacto">
+            <h1>Contactenos</h1>
         </section>
         <section>
-            <form action="/submit" method="post"></form>
-        
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
-        
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido">
-        
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email">
-        
-            <label for="numero">Número</label>
-            <input type="text" name="numero" id="numero">
-        
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje"></textarea>
-        
-            <input type="submit" value="enviar">
+            <h2>¿Donde nos encontramos?</h2>
+            <div class="referencias">
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202.46368863847468!2d-65.0144749!3d-32.3359519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2e136bfed4b29%3A0x30258246167a598b!2sPanader%C3%ADa%20Mediterranea!5e1!3m2!1ses!2sar!4v1758372641682!5m2!1ses!2sar"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <ul>
+                        <li class="datos">
+                            <h3>Dirección</h3>
+                            Av. Norte 1429
+                        </li>
+                        <li class="datos">
+                            <h3>WhatsApp</h3>
+                            12345678
+                        </li>
+                        <li class="datos">
+                            <h3>Instagram</h3>
+                            <a href="">mediterranea72</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <form class="grid-contenedor" action="/submit" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+    
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+    
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+    
+                <label for="numero">Número</label>
+                <input type="text" name="numero" id="numero">
+    
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje"></textarea>
+    
+                <input type="submit" value="enviar">
+            </form>
+
         </section>
     </main>
     <footer>
@@ -95,7 +122,7 @@
             </div>
             <div class="grid.item">
                 <h2>Redes Sociales</h2>
-               <a class="iconos" href=""><i class="bi bi-instagram"></i></a>
+                <a class="iconos" href=""><i class="bi bi-instagram"></i></a>
                 <a class="iconos" href=""><i class="bi bi-facebook"></i></a>
             </div>
             <div class="grid.item">
@@ -104,7 +131,7 @@
             </div>
             <div class="grid.item">
                 <h2>Ubicación</h2>
-                <p>Av. Norte</p>
+                <p>Av. Norte 1429</p>
             </div>
         </div>
     </footer>
