@@ -1,7 +1,7 @@
 /*---------Header-----------*/
 
 header{
-     background-color: brown;
+     background-color: $color-contraste;
      nav{
           div{
                a{
@@ -12,17 +12,17 @@ header{
 }
 
 .btn{
-    color: rgba(255, 222, 172, 0.947);
-    border: 2px solid rgba(255, 222, 172, 0.947)!important;
+    color: $color-neutro;
+    border: 2px solid $color-neutro!important;
     &:hover{
-    color:brown;
-    background-color: rgba(255, 222, 172, 0.947);
+    color: $color-contraste;
+    background-color: $color-neutro;
     }
 }
 
 .nav-link{
-    color: rgba(255, 222, 172, 0.947);
+    color: $color-neutro;
     &:hover{
-    color: rgb(255, 196, 0);
+    color: $color-link;
     }
 }

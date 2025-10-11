@@ -1,4 +1,26 @@
+
 /*------------Main------------*/
+@use "../base/funcionalidades" as c;
+
+.caja-1{
+    color: brown;
+    @include c.flex (flex, space-between, center)
+}
+
+.caja-2{
+    color: black;
+    @include c.flex (flex, space-around, left)
+}
+
+.tarjeta-1{
+    border-radius: 5px;
+    @extend %tarjeta;
+}
+
+.tarjeta-2{
+    border-radius: 20px;
+    @extend %tarjeta;
+}
 
 .medialunas{
     width: 1525px;
@@ -25,8 +47,8 @@ h2{
         }
         a{
         text-decoration: none;
-        color:  rgb(255, 196, 0);
-        background-color: brown;
+        color:  c.$color-link;
+        background-color: c.$color-contraste;
         border-radius: 10px;
         padding: 5px;
         height: 30px;
@@ -61,14 +83,14 @@ h2{
             margin: 25px;
             }
             a{
-            color:   rgb(255, 222, 172);
-            background-color: brown;
+            color:   nth($list: $colores, $n:2 );
+            background-color: c.$color-contraste;
             border-radius: 10px;
             padding: 5px;
             width: 100%;
                &:hover{
                 background-color: bisque;
-                color: brown;
+                color: c.$color-contraste;
                }
             }
         }
@@ -80,13 +102,13 @@ h2{
             }
             a{
             color:   rgb(255, 222, 172);
-            background-color: brown;
+            background-color: c.$color-contraste;
             border-radius: 10px;
             padding: 5px;
             width: 100%;
                 &:hover{
                 background-color: bisque;
-                color: brown;
+                color: c.$color-contraste;
                }
             }
         }
@@ -98,13 +120,13 @@ h2{
             }
             a{
             color:   rgb(255, 222, 172);
-            background-color: brown;
+            background-color: c.$color-contraste;
             border-radius: 10px;
             padding: 5px;
             width: 100%;
                 &:hover{
                 background-color: bisque;
-                color: brown;
+                color: c.$color-contraste;
                }
             }
         }
@@ -116,13 +138,13 @@ h2{
             }
             a{
             color:   rgb(255, 222, 172);
-            background-color: brown;
+            background-color: c.$color-contraste;
             border-radius: 10px;
             padding: 5px;
             width: 100%;
                 &:hover{
                 background-color: bisque;
-                color: brown;
+                color: c.$color-contraste;
                }
             }
         }
@@ -148,7 +170,7 @@ main section{
     height: 450px;
     text-align: center;
     margin: 13px;
-    border: 5px solid brown;
+    border: 5px solid c.$color-contraste;
 }
 
 p{
@@ -169,7 +191,7 @@ p{
 .principio{
     h1{
         font-size: 70px;
-    color: black;
+    color: nth($list: $colores, $n:1 );
     line-height: 700px;
     }
 }
@@ -231,7 +253,7 @@ p{
     h3{
     position: absolute;
     bottom: -1;
-    color: rgb(255, 222, 172);
+    color: c.$color-neutro;
     background-color: rgba(165, 42, 42, 0.822);
     width: 100%;
     padding: 5px;
@@ -239,7 +261,7 @@ p{
 }
 
 .grid-catalogo{
-    di{
+    div{
         img{
         width: 100%;
         height: 100%;
@@ -356,9 +378,9 @@ p{
 }
 .datos{
     a{
-        color: brown;
+        color: c.$color-contraste;
         &:hover{
-            color:  rgb(255, 196, 0);
+            color:  c.$color-link;
         }
     }
     

@@ -245,7 +245,6 @@ footer{
 /* ------------------CATALOGO------------------ */
 
 .grid-catalogo{
-    /* border: solid 4px; */
     margin: 55px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -254,8 +253,6 @@ footer{
 }
 
 .item-catalogo{
-    /* border: solid 2px;
-    background-color: brown; */
     height: 400px;
     position: relative;
 }
@@ -374,6 +371,7 @@ footer{
 .grid-contenedor{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -496,6 +494,12 @@ footer{
 
   }
 
+  @media screen and (max-width: 480px){
+    .mapa{
+        width: 250px;
+    }
+  }
+
   @media screen and (max-width: 474px){
     .principio h1{
         font-size: 50px;
@@ -507,4 +511,10 @@ footer{
     justify-content: center;
     }
     
+  }
+
+  @media screen and (max-width: 380px){
+    .titulo-contactos{
+        font-size: 20px;
+    }
   }

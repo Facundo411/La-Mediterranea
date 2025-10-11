@@ -1,0 +1,22 @@
+// Variables
+$color-contraste: brown;
+$color-neutro: rgba(255, 222, 172, 0.947);
+$color-link: rgb(255, 196, 0);
+
+// Listas
+$colores: black, rgb(255, 222, 172);
+
+// Extends
+%tarjeta{
+    color: brown;
+    background-color: bisque;
+    border: 2px solid rgb(255, 196, 0);
+}
+
+// Mixin
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+
+}
