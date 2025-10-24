@@ -1,6 +1,21 @@
 @forward "./components/main.scss";
-@import "./base/funcionalidades.scss";
-@import "./base/generales.scss";
-@import "./components/header.scss";
-@import "./components/footer.scss";
-@import "./base/mediaquery.scss";
+@forward "./base/funcionalidades.scss";
+@forward "./base/generales.scss";
+@forward "./components/header.scss";
+@forward "./components/footer.scss";
+@forward "./base/mediaquery.scss";
+
+// en el archivo que quieras usar las listas tenes que poner:
+
+// @use "sass:list";
+
+// esto te importa la función list de saas.
+
+// Yo por ejemplo tengo esta lista:
+
+//     "enviar": ($primary, 1.01, 0 0 5px $primary, rgba($primary, 0.8)),
+
+
+// Luego cuando lo quieras usar para descomponer la lista tenes que usarlo asi por ejemplo para descomponer la lista de arriba:
+
+//     $color: list.nth($valores, 1); // primer valor -> color

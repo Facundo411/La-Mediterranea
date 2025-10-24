@@ -1,18 +1,522 @@
-/* Error: Undefined variable.
- *    ,
- * 86 |             color:   nth($list: $colores, $n:2 );
- *    |                                 ^^^^^^^^
- *    '
- *   scss\components\_main.scss 86:33  @forward
- *   scss\estilos.scss 1:1             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 86 \2502              color:   nth($list: $colores, $n:2 );\d\a    \2502                                  ^^^^^^^^\a    \2575 \a   scss\\components\\_main.scss 86:33  @forward\a   scss\\estilos.scss 1:1             root stylesheet";
+/*------------Main------------*/
+/*--------- FUENTES ----------*/
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&display=swap");
+.tarjeta-1, .tarjeta-2 {
+  color: brown;
+  background-color: bisque;
+  border: 2px solid rgb(255, 196, 0);
 }
+
+.caja-1 {
+  color: brown;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.caja-2 {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+}
+
+.tarjeta-1 {
+  border-radius: 5px;
+}
+
+.tarjeta-2 {
+  border-radius: 20px;
+}
+
+.medialunas {
+  width: 1525px;
+  height: 700px;
+  background-position: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+.nosotros {
+  display: flex;
+  margin: 100px;
+}
+.nosotros div {
+  margin: 20px;
+}
+.nosotros div p {
+  justify-content: center;
+}
+.nosotros div a {
+  text-decoration: none;
+  color: rgb(255, 196, 0);
+  background-color: brown;
+  border-radius: 10px;
+  padding: 5px;
+  height: 30px;
+  width: 80px;
+  margin: 60px;
+  display: flex;
+  align-items: center;
+}
+.nosotros div a:hover {
+  color: rgb(255, 232, 197);
+}
+.nosotros img {
+  height: 400px;
+}
+
+.nuestros-productos h2 {
+  text-align: center;
+  margin: 80px;
+}
+.nuestros-productos div div img {
+  display: flex;
+  width: 300px;
+}
+.nuestros-productos div div h3 {
+  font-size: 40px;
+  text-align: center;
+  margin: 25px;
+}
+.nuestros-productos div div a {
+  color: rgb(255, 222, 172);
+  background-color: brown;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+}
+.nuestros-productos div div a:hover {
+  background-color: bisque;
+  color: brown;
+}
+.nuestros-productos div div h3 {
+  font-size: 40px;
+  text-align: center;
+  margin: 25px;
+}
+.nuestros-productos div div a {
+  color: rgb(255, 222, 172);
+  background-color: brown;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+}
+.nuestros-productos div div a:hover {
+  background-color: bisque;
+  color: brown;
+}
+.nuestros-productos div div h3 {
+  font-size: 40px;
+  text-align: center;
+  margin: 25px;
+}
+.nuestros-productos div div a {
+  color: rgb(255, 222, 172);
+  background-color: brown;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+}
+.nuestros-productos div div a:hover {
+  background-color: bisque;
+  color: brown;
+}
+.nuestros-productos div div h3 {
+  font-size: 40px;
+  text-align: center;
+  margin: 25px;
+}
+.nuestros-productos div div a {
+  color: rgb(255, 222, 172);
+  background-color: brown;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+}
+.nuestros-productos div div a:hover {
+  background-color: bisque;
+  color: brown;
+}
+
+main section div a {
+  text-decoration: none;
+}
+
+.productos2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.division-productos {
+  width: 310px;
+  height: 450px;
+  text-align: center;
+  margin: 13px;
+  border: 5px solid brown;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* -----------NOSOTROS------------- */
+.principio {
+  background-image: url(../img/Historia.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.principio h1 {
+  font-size: 70px;
+  line-height: 700px;
+}
+
+.historia-principio {
+  margin: 40px;
+}
+
+.parrafo-historia {
+  font-size: 25px;
+}
+
+.parrafo-principios {
+  text-align: center;
+  line-height: 50px;
+}
+
+.subtitulo-comienzos {
+  text-align: center;
+}
+
+.comienzos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.imagen-comienzos {
+  display: flex;
+  width: 600px;
+  height: 700px;
+  margin: 20px;
+}
+
+.parrafo-comienzos {
+  flex-direction: column;
+  width: 650px;
+  font-size: 22px;
+}
+
+/* ------------------CATALOGO------------------ */
+.grid-catalogo {
+  margin: 55px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 126px);
+  gap: 10px;
+}
+
+.item-catalogo {
+  height: 400px;
+  position: relative;
+}
+
+.item-catalogo h3 {
+  position: absolute;
+  bottom: -1;
+  color: rgba(255, 222, 172, 0.947);
+  background-color: rgba(165, 42, 42, 0.822);
+  width: 100%;
+  padding: 5px;
+}
+
+.grid-catalogo div img {
+  width: 100%;
+  height: 100%;
+}
+.grid-catalogo {
+  width: 100%;
+  height: 100%;
+}
+
+.panificados {
+  margin: 15px;
+}
+
+.catalogo-facturas {
+  margin: 55px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 126px);
+  gap: 10px;
+}
+
+.catalogo-facturas div img {
+  width: 100%;
+  height: 100%;
+}
+
+.catalogo-tartas {
+  margin: 55px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 126px);
+  gap: 10px;
+}
+
+.catalogo-tartas div img {
+  width: 100%;
+  height: 100%;
+}
+
+.catalogo-galletitas {
+  margin: 55px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 126px);
+  gap: 10px;
+}
+
+.catalogo-galletitas div img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------PEDIDOS------------------ */
+.pedidos {
+  background-image: url(../img/pedidos.png);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ----------------CONTACTO---------------- */
+.imagen-contacto {
+  background-image: url(../img/contacto.png);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.imagen-contacto h1 {
+  font-size: 70px;
+  line-height: 700px;
+  text-align: left;
+  padding: 50px;
+}
+
+.referencias {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 80px;
+}
+
+.referencias ul li {
+  text-decoration: none;
+}
+
+.datos {
+  margin: 30px;
+}
+
+.datos a {
+  color: brown;
+}
+.datos a:hover {
+  color: rgb(255, 196, 0);
+}
+
+.grid-contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*----------RESET-----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----------Body------------*/
+body {
+  font-family: "Quintessential", serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: 10px;
+}
+
+/*---------Header-----------*/
+header nav div a {
+  margin-right: 50px;
+}
+
+/*------------FOOTER-----------*/
+footer {
+  background-color: brown;
+  font-size: larger;
+}
+footer div div a {
+  text-decoration: none;
+  margin: 20px;
+}
+footer div div a {
+  text-decoration: none;
+  margin: 20px;
+}
+footer div div a {
+  text-decoration: none;
+  margin: 20px;
+}
+
+.iconos {
+  color: rgb(255, 222, 172);
+  font-size: 40px;
+}
+.iconos:hover {
+  color: rgb(255, 196, 0);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid.item {
+  padding: 10px;
+  margin: 10px;
+}
+
+/*----------Media Querie----------*/
+@media screen and (max-width: 1300px) {
+  .parrafo-comienzos {
+    width: 500px;
+    font-size: 20px;
+  }
+  .imagen-comienzos {
+    width: 500px;
+    height: 650px;
+  }
+}
+@media screen and (max-width: 1245px) {
+  .imagen-comienzos {
+    width: 400px;
+    height: 500px;
+  }
+  .moto {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .imagen-principios {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .parrafo-principios {
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 1007px) {
+  .grid-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.img-nosotros {
+  height: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+  .parrafo-comienzos {
+    width: 400px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .imagen-comienzos {
+    width: 300px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .parrafo-comienzos {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .imagen-comienzos {
+    width: 225px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 672px) {
+  .productos2 {
+    justify-content: center;
+  }
+  .grid-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .img-nosotros {
+    display: none;
+  }
+  .parrafo-comienzos {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .imagen-comienzos {
+    width: 205px;
+    height: 225px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .parrafo-principios {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+  .moto {
+    width: 300px;
+    justify-content: center;
+  }
+  .sub-comienzos {
+    font-size: 30px;
+  }
+  .subtitulo-comienzos {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 474px) {
+  .principio h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .nosotros {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

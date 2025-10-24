@@ -1,15 +1,16 @@
 
 /*------------Main------------*/
-@use "../base/funcionalidades" as c;
+@use "../base/funcionalidades" as *;
+@use 'sass:list';
 
 .caja-1{
     color: brown;
-    @include c.flex (flex, space-between, center)
+    @include flex (flex, space-between, center)
 }
 
 .caja-2{
     color: black;
-    @include c.flex (flex, space-around, left)
+    @include flex (flex, space-around, left)
 }
 
 .tarjeta-1{
@@ -47,8 +48,8 @@ h2{
         }
         a{
         text-decoration: none;
-        color:  c.$color-link;
-        background-color: c.$color-contraste;
+        color:  $color-link;
+        background-color: $color-contraste;
         border-radius: 10px;
         padding: 5px;
         height: 30px;
@@ -83,14 +84,33 @@ h2{
             margin: 25px;
             }
             a{
-            color:   nth($list: $colores, $n:2 );
-            background-color: c.$color-contraste;
+            color: list.nth($colores, 2);
+            background-color: $color-contraste;
             border-radius: 10px;
             padding: 5px;
             width: 100%;
                &:hover{
                 background-color: bisque;
-                color: c.$color-contraste;
+                color: $color-contraste;
+               }
+            }
+        }
+        
+        div{
+            h3{
+            font-size: 40px;
+            text-align: center;
+            margin: 25px;
+            }
+            a{
+            color:   rgb(255, 222, 172);
+            background-color: $color-contraste;
+            border-radius: 10px;
+            padding: 5px;
+            width: 100%;
+                &:hover{
+                background-color: bisque;
+                color: $color-contraste;
                }
             }
         }
@@ -102,13 +122,13 @@ h2{
             }
             a{
             color:   rgb(255, 222, 172);
-            background-color: c.$color-contraste;
+            background-color: $color-contraste;
             border-radius: 10px;
             padding: 5px;
             width: 100%;
                 &:hover{
                 background-color: bisque;
-                color: c.$color-contraste;
+                color: $color-contraste;
                }
             }
         }
@@ -120,31 +140,13 @@ h2{
             }
             a{
             color:   rgb(255, 222, 172);
-            background-color: c.$color-contraste;
+            background-color: $color-contraste;
             border-radius: 10px;
             padding: 5px;
             width: 100%;
                 &:hover{
                 background-color: bisque;
-                color: c.$color-contraste;
-               }
-            }
-        }
-        div{
-            h3{
-            font-size: 40px;
-            text-align: center;
-            margin: 25px;
-            }
-            a{
-            color:   rgb(255, 222, 172);
-            background-color: c.$color-contraste;
-            border-radius: 10px;
-            padding: 5px;
-            width: 100%;
-                &:hover{
-                background-color: bisque;
-                color: c.$color-contraste;
+                color: $color-contraste;
                }
             }
         }
@@ -170,7 +172,7 @@ main section{
     height: 450px;
     text-align: center;
     margin: 13px;
-    border: 5px solid c.$color-contraste;
+    border: 5px solid $color-contraste;
 }
 
 p{
@@ -191,7 +193,7 @@ p{
 .principio{
     h1{
         font-size: 70px;
-    color: nth($list: $colores, $n:1 );
+    // color: nth($list: $colores, $n:1 );
     line-height: 700px;
     }
 }
@@ -253,7 +255,7 @@ p{
     h3{
     position: absolute;
     bottom: -1;
-    color: c.$color-neutro;
+    color: $color-neutro;
     background-color: rgba(165, 42, 42, 0.822);
     width: 100%;
     padding: 5px;
@@ -378,9 +380,9 @@ p{
 }
 .datos{
     a{
-        color: c.$color-contraste;
+        color: $color-contraste;
         &:hover{
-            color:  c.$color-link;
+            color:  $color-link;
         }
     }
     

@@ -1,7 +1,7 @@
 /*---------Header-----------*/
 
 header{
-     background-color: $color-contraste;
+     // background-color: $color-contraste;
      nav{
           div{
                a{
@@ -12,17 +12,17 @@ header{
 }
 
 .btn{
-    color: $color-neutro;
-    border: 2px solid $color-neutro!important;
+//     color: $color-neutro;
+//     border: 2px solid $color-neutro!important;
     &:hover{
-    color: $color-contraste;
-    background-color: $color-neutro;
+//     color: $color-contraste;
+//     background-color: $color-neutro;
     }
 }
 
 .nav-link{
-    color: $color-neutro;
+//     color: $color-neutro;
     &:hover{
-    color: $color-link;
+//     color: $color-link;
     }
 }

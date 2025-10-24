@@ -9,14 +9,15 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../img/logo-mediterranea.jpeg">
 </head>
 
 <body>
-    
+
     <header>
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../img/logo-mediterranea.jpeg" alt=""></a>
+                <a class="navbar-brand" href="#"><img src="../img/logo-png.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -31,8 +32,8 @@
                             <a class="nav-link" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                             <a class="nav-link" href="./pedidos.html">Pedidos</a>
-                         </li>
+                            <a class="nav-link" href="./pedidos.html">Pedidos</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -63,14 +64,87 @@
 
     </header>
     <main>
-       <section class="pedidos">
-           <h1>Pedidos</h1>
+        <section class="pedidos">
+            <h1>Pedidos</h1>
+        </section>
+        <section>
+            <h2 class="gratis">Haga su pedido, y recibalo GRATIS en su casa</h2>
+        </section>
+        <h2 class="populares">Populares</h2>
+        <section class="sec-populares">
+            <div class="div-populares">
+                <div class="div-pedidos">
+                    <img src="../img/alfajores-chocolate.png" alt="">
+                    <h3>Alfajor de chocolate</h3>
+                    <a href="">Comprar</a>
+                </div>
+                <div class="div-pedidos">
+                    <img src="../img/chipa.png" alt="">
+                    <h3>Chipa</h3>
+                    <a href="">Comprar</a>
+                </div>
+                <div class="div-pedidos">
+                    <img src="../img/pepas2.png" alt="">
+                    <h3>Pepas</h3>
+                    <a href="">Comprar</a>
+                </div>
+                <div class="div-pedidos">
+                    <img src="../img/criollos.png" alt="">
+                    <h3>Criollos</h3>
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="llevar">¿Qué le gustaría llevar?</h2>
+            <div class="flex-pedidos">
+                <div class="despacho">
+                    <img class="img-despacho" src="../img/despacho.png" alt="">
+                </div>
+                <section>
+                    <div class="container contacto__grid">
+
+                        <section class="panel" aria-labelledby="form-title">
+                            <form action="#" method="post" class="row g-3" autocomplete="on" novalidate>
+                                <div class="col-12">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input id="nombre" name="nombre" type="text" class="form-control"
+                                        placeholder="Tu nombre" required autocomplete="name" />
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <label for="correo" class="form-label">Correo electrónico</label>
+                                    <input id="correo" name="correo" type="email" class="form-control"
+                                        placeholder="tu@correo.com" required autocomplete="email" inputmode="email" />
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <label for="numero" class="form-label">Número de teléfono</label>
+                                    <input id="numero" name="numero" type="text" class="form-control"
+                                        placeholder="Número" required />
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="pedido" class="form-label">Pedido</label>
+                                    <textarea id="pedido" name="pedido" rows="5" class="form-control"
+                                        placeholder="¿Qué vas a llevar?..." required></textarea>
+                                </div>
+
+                                <div class="col-12 text-end">
+                                    <button type="submit" class="btn btn-2 btn-primary px-4">Enviar</button>
+                                </div>
+                            </form>
+                        </section>
+
+                    </div>
+                </section>
+            </div>
         </section>
     </main>
     <footer>
         <div class="grid-container">
             <div>
-                <img src="../img/logo-mediterranea.jpeg" alt="">
+                <img src="../img/logo-png.png" alt="">
             </div>
             <div class="grid.item">
                 <h2>Redes Sociales</h2>

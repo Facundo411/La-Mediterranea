@@ -16,10 +16,10 @@
 
 
 /*----------Body------------*/
-
+// @use "../base/funcionalidades" as *;
 
 body{
-    background-color: $color-neutro;
+    // background-color: $color-neutro;
     font-family: "Quintessential", serif;
     font-size: 20px;
     font-weight: 400;
