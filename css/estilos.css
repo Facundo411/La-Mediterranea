@@ -37,11 +37,11 @@
 
 h1 {
   text-align: center;
-  font-size: 60px;
+  font-size: 55px;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .nosotros {
@@ -68,18 +68,19 @@ h2 {
 }
 .nosotros div a:hover {
   color: rgb(255, 232, 197);
+  transition: 0.4s;
+}
+.nosotros div a:active {
+  background-color: rgb(255, 232, 197);
+  color: brown;
 }
 .nosotros img {
-  height: 400px;
+  height: 200px;
 }
 
 .nuestros-productos h2 {
   text-align: center;
   margin: 80px;
-}
-.nuestros-productos div div img {
-  display: flex;
-  width: 300px;
 }
 .nuestros-productos div div h3 {
   font-size: 40px;
@@ -96,6 +97,7 @@ h2 {
 .nuestros-productos div div a:hover {
   background-color: bisque;
   color: brown;
+  transition: 0.2s;
 }
 .nuestros-productos div div h3 {
   font-size: 40px;
@@ -179,7 +181,8 @@ p {
 }
 
 .principio h1 {
-  font-size: 70px;
+  font-size: 55px;
+  color: black;
   line-height: 700px;
 }
 
@@ -219,20 +222,40 @@ p {
   font-size: 22px;
 }
 
+.moto {
+  margin: 25px;
+}
+
+.grid-img {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* ------------------CATALOGO------------------ */
 .grid-catalogo {
+  height: 500px;
   margin: 55px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 126px);
+  grid-auto-rows: 400px;
   gap: 10px;
+}
+.grid-catalogo div img {
+  width: 100%;
+  height: 100%;
 }
 
 .item-catalogo {
   height: 400px;
   position: relative;
 }
-
+.item-catalogo:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.51);
+}
 .item-catalogo h3 {
   position: absolute;
   bottom: -1;
@@ -242,56 +265,8 @@ p {
   padding: 5px;
 }
 
-.grid-catalogo div img {
-  width: 100%;
-  height: 100%;
-}
-.grid-catalogo {
-  width: 100%;
-  height: 100%;
-}
-
 .panificados {
   margin: 15px;
-}
-
-.catalogo-facturas {
-  margin: 55px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 126px);
-  gap: 10px;
-}
-
-.catalogo-facturas div img {
-  width: 100%;
-  height: 100%;
-}
-
-.catalogo-tartas {
-  margin: 55px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 126px);
-  gap: 10px;
-}
-
-.catalogo-tartas div img {
-  width: 100%;
-  height: 100%;
-}
-
-.catalogo-galletitas {
-  margin: 55px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 126px);
-  gap: 10px;
-}
-
-.catalogo-galletitas div img {
-  width: 100%;
-  height: 100%;
 }
 
 /* ------------------PEDIDOS------------------ */
@@ -302,6 +277,71 @@ p {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+.pedidos h1 {
+  line-height: 600px;
+  text-align: left;
+  padding: 150px;
+}
+
+.div-pedidos {
+  width: 310px;
+  height: 450px;
+  text-align: center;
+  margin: 13px;
+  border: 5px solid brown;
+}
+
+.sec-populares {
+  padding: 150px;
+}
+.sec-populares div div a {
+  color: rgb(255, 222, 172);
+  background-color: brown;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+}
+.sec-populares div div a:hover {
+  background-color: bisque;
+  color: brown;
+  transition: 0.2s;
+}
+.sec-populares div div h3 {
+  margin: 30px;
+}
+
+.populares {
+  color: rgb(181, 31, 31);
+  font-size: 50px;
+  text-align: center;
+}
+
+.gratis {
+  text-align: center;
+  margin: 40px;
+}
+
+.div-populares {
+  display: flex;
+  justify-content: center;
+}
+
+.despacho {
+  display: flex;
+  justify-content: center;
+}
+
+.llevar {
+  margin: 30px;
+}
+
+.flex-pedidos .pedir {
+  margin: 100px;
+  text-align: center;
+}
+.flex-pedidos form label {
+  margin: 20px;
 }
 
 /* ----------------CONTACTO---------------- */
@@ -315,10 +355,15 @@ p {
 }
 
 .imagen-contacto h1 {
-  font-size: 70px;
+  font-size: 55px;
   line-height: 700px;
   text-align: left;
   padding: 50px;
+}
+
+.mapa {
+  height: 500px;
+  width: 700px;
 }
 
 .referencias {
@@ -336,16 +381,32 @@ p {
   margin: 30px;
 }
 
+.datos {
+  margin: 30px;
+}
+.datos h3 {
+  font-size: 40px;
+}
 .datos a {
   color: brown;
 }
 .datos a:hover {
   color: rgb(255, 196, 0);
+  transition: 0.1s;
 }
 
-.grid-contenedor {
-  display: flex;
-  justify-content: space-between;
+.btn-2 {
+  color: rgba(255, 222, 172, 0.947);
+  border: 2px brown;
+  background-color: brown;
+}
+.btn-2:hover {
+  color: brown;
+  background-color: rgba(255, 222, 172, 0.947);
+}
+.btn-2:active {
+  background-color: rgba(255, 222, 172, 0.947) !important;
+  color: brown !important;
 }
 
 /*----------RESET-----------*/
@@ -357,6 +418,7 @@ p {
 
 /*----------Body------------*/
 body {
+  background-color: rgba(255, 222, 172, 0.947);
   font-family: "Quintessential", serif;
   font-size: 20px;
   font-weight: 400;
@@ -364,8 +426,36 @@ body {
 }
 
 /*---------Header-----------*/
+header {
+  background-color: brown;
+}
 header nav div a {
   margin-right: 50px;
+}
+
+.btn {
+  color: rgba(255, 222, 172, 0.947);
+  border: 2px solid rgba(255, 222, 172, 0.947) !important;
+}
+.btn:hover {
+  color: brown;
+  background-color: rgba(255, 222, 172, 0.947);
+}
+.btn:active {
+  color: brown !important;
+  background-color: rgba(255, 222, 172, 0.947) !important;
+}
+
+.nav-link {
+  color: rgba(255, 222, 172, 0.947);
+}
+.nav-link:hover {
+  color: rgb(255, 196, 0);
+  transition: 1s;
+}
+
+.mediterranea {
+  font-size: 60px;
 }
 
 /*------------FOOTER-----------*/
@@ -373,17 +463,22 @@ footer {
   background-color: brown;
   font-size: larger;
 }
-footer div div a {
-  text-decoration: none;
-  margin: 20px;
+footer div div h2 {
+  font-size: 35px;
 }
 footer div div a {
   text-decoration: none;
   margin: 20px;
 }
+footer div div h2 {
+  font-size: 35px;
+}
 footer div div a {
   text-decoration: none;
   margin: 20px;
+}
+footer div div h2 {
+  font-size: 35px;
 }
 
 .iconos {
@@ -392,6 +487,7 @@ footer div div a {
 }
 .iconos:hover {
   color: rgb(255, 196, 0);
+  transition: 1s;
 }
 
 .grid-container {
@@ -414,8 +510,11 @@ footer div div a {
     width: 500px;
     height: 650px;
   }
+  .div-populares {
+    flex-wrap: wrap;
+  }
 }
-@media screen and (max-width: 1245px) {
+@media screen and (max-width: 1246px) {
   .imagen-comienzos {
     width: 400px;
     height: 500px;
@@ -424,14 +523,35 @@ footer div div a {
     width: 500px;
   }
 }
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1200px) {
   .imagen-principios {
     width: 400px;
+  }
+  .img-despacho {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 1167px) {
+  .pedir {
+    display: grid;
+    grid-template-columns: repeat(1, 200px);
+    grid-template-rows: repeat(4, 100px);
+  }
+  .flex-pedidos .pedir form .input {
+    width: 500px;
   }
 }
 @media screen and (max-width: 1100px) {
   .parrafo-principios {
     line-height: 30px;
+  }
+}
+@media screen and (max-width: 1075px) {
+  .moto {
+    width: 400px;
+  }
+  .nosotros div img {
+    height: 200px;
   }
 }
 @media screen and (max-width: 1007px) {
@@ -441,10 +561,6 @@ footer div div a {
     flex-wrap: wrap;
   }
 }
-.img-nosotros {
-  height: 200px;
-}
-
 @media screen and (max-width: 1000px) {
   .parrafo-comienzos {
     width: 400px;
@@ -456,10 +572,107 @@ footer div div a {
     width: 300px;
     height: 400px;
   }
+  .moto {
+    width: 300px;
+  }
+  .grid-catalogo {
+    gap: 60px;
+    height: 950px;
+  }
+  .flautas {
+    grid-column: span 2;
+    width: 350px;
+  }
+  .mignion {
+    grid-column: span 2;
+    width: 760px;
+  }
+  .manteca {
+    grid-column: span 2;
+    width: 350px;
+  }
+  .grasa {
+    grid-column: span 2;
+    width: 760px;
+  }
+  .leche {
+    grid-column: span 2;
+    width: 350px;
+  }
+  .coco {
+    grid-column: span 2;
+    width: 760px;
+  }
+  .naranjitas {
+    grid-column: span 2;
+    width: 350px;
+  }
+  .scones {
+    grid-column: span 2;
+    width: 760px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .leche {
+    width: 300px;
+  }
+  .coco {
+    width: 670px;
+  }
+  .flautas {
+    width: 300px;
+  }
+  .mignion {
+    width: 670px;
+  }
+  .manteca {
+    width: 300px;
+  }
+  .grasa {
+    width: 670px;
+  }
+  .naranjitas {
+    width: 300px;
+  }
+  .scones {
+    width: 670px;
+  }
 }
 @media screen and (max-width: 800px) {
   .parrafo-comienzos {
     width: 300px;
+  }
+  .img-despacho {
+    width: 500px;
+  }
+  .mapa {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .leche {
+    width: 250px;
+  }
+  .coco {
+    width: 550px;
+  }
+  .flautas {
+    width: 250px;
+  }
+  .mignion {
+    width: 550px;
+  }
+  .manteca {
+    width: 250px;
+  }
+  .grasa {
+    width: 550px;
+  }
+  .naranjitas {
+    width: 250px;
+  }
+  .scones {
+    width: 550px;
   }
 }
 @media screen and (max-width: 680px) {
@@ -467,14 +680,32 @@ footer div div a {
     width: 225px;
     height: 300px;
   }
+  .flex-pedidos .pedir form .input {
+    width: 300px;
+  }
 }
-@media screen and (max-width: 672px) {
+@media screen and (max-width: 675px) {
   .productos2 {
     justify-content: center;
   }
   .grid-container {
     flex-direction: column;
     text-align: center;
+  }
+  .moto {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .grid-catalogo {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    grid-auto-rows: 400px;
+    height: 1400px;
+  }
+  .item-catalogo {
+    height: 300px;
+    width: 480px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -483,6 +714,16 @@ footer div div a {
   }
   .parrafo-comienzos {
     width: 250px;
+  }
+  .mapa {
+    height: 350px;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .item-catalogo {
+    height: 300px;
+    width: 400px;
   }
 }
 @media screen and (max-width: 530px) {
@@ -497,25 +738,52 @@ footer div div a {
     display: flex;
     flex-direction: column;
   }
-  .moto {
-    width: 300px;
-    justify-content: center;
-  }
   .sub-comienzos {
     font-size: 30px;
   }
   .subtitulo-comienzos {
     font-size: 40px;
   }
+  .img-despacho {
+    width: 350px;
+  }
 }
-@media screen and (max-width: 474px) {
+@media screen and (max-width: 480px) {
+  .mapa {
+    height: 260px;
+    width: 260px;
+  }
+}
+@media screen and (max-width: 475px) {
   .principio h1 {
     font-size: 50px;
+  }
+  .grid-img {
+    display: grid;
+    justify-content: center;
+  }
+  .flex-pedidos .pedir form .input {
+    width: 150px;
+  }
+  .item-catalogo {
+    height: 300px;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .item-catalogo {
+    height: 300px;
+    width: 250px;
   }
 }
 @media screen and (max-width: 400px) {
   .nosotros {
     justify-content: center;
+  }
+}
+@media screen and (max-width: 380px) {
+  .titulo-contactos {
+    font-size: 20px;
   }
 }
 

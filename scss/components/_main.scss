@@ -31,11 +31,11 @@
 
 h1{
     text-align: center;
-    font-size: 60px;
+    font-size: 55px;
 }
 
 h2{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .nosotros{
@@ -44,7 +44,7 @@ h2{
     div{
     margin: 20px;
         p{
-         justify-content: center;   
+        justify-content: center;   
         }
         a{
         text-decoration: none;
@@ -59,11 +59,16 @@ h2{
         align-items: center;
             &:hover{
                 color: rgb(255, 232, 197);
+                transition: 0.4s;
+            }
+            &:active{
+            background-color: rgb(255, 232, 197);
+            color: brown;
             }
         }
     }
     img{
-     height: 400px;
+     height: 200px;
     }
 }
 
@@ -74,10 +79,6 @@ h2{
     }
     div{
         div{
-            img{
-            display: flex;
-            width: 300px;
-            }
             h3{
             font-size: 40px;
             text-align: center;
@@ -92,6 +93,7 @@ h2{
                &:hover{
                 background-color: bisque;
                 color: $color-contraste;
+                transition: 0.2s;
                }
             }
         }
@@ -153,10 +155,12 @@ h2{
     }
 }
 
-main section{
-    div{
-        a{
-            text-decoration: none;
+main{
+    section{
+        div{
+            a{
+                text-decoration: none;
+            }
         }
     }
 }
@@ -192,8 +196,8 @@ p{
 
 .principio{
     h1{
-        font-size: 70px;
-    // color: nth($list: $colores, $n:1 );
+    font-size: 55px;
+    color: list.nth($colores, 1);
     line-height: 700px;
     }
 }
@@ -235,23 +239,43 @@ p{
     font-size: 22px;
 }
 
+.moto{
+    margin: 25px;
+}
+
+.grid-img{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* ------------------CATALOGO------------------ */
 
 .grid-catalogo{
+    height: 500px;
     margin: 55px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 126px);
+    grid-auto-rows: 400px;
     gap: 10px;
+    div{
+        img{
+        width: 100%;
+        height: 100%;
+        }
+    }
 }
 
 .item-catalogo{
     height: 400px;
     position: relative;
-}
-
-.item-catalogo{
+    &:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.51);
+    }
     h3{
     position: absolute;
     bottom: -1;
@@ -262,71 +286,8 @@ p{
     }
 }
 
-.grid-catalogo{
-    div{
-        img{
-        width: 100%;
-        height: 100%;
-           }
-    }
-    width: 100%;
-    height: 100%;
-
-}
-
 .panificados{
     margin: 15px;
-}
-
-.catalogo-facturas{
-    margin: 55px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 126px);
-    gap: 10px;
-}
-
-.catalogo-facturas{
-    div{
-        img{
-        width: 100%;
-        height: 100%;
-        }
-    }
-}
-
-.catalogo-tartas{
-    margin: 55px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 126px);
-    gap: 10px;
-}
-
-.catalogo-tartas{
-    div{
-        img{
-        width: 100%;
-        height: 100%;
-        }
-    }
-}
-
-.catalogo-galletitas{
-    margin: 55px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 126px);
-    gap: 10px;
-}
-
-.catalogo-galletitas{
-    div{
-        img{
-        width: 100%;
-        height: 100%;
-        }
-    }
 }
 
 
@@ -339,8 +300,82 @@ p{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    h1{
+    line-height: 600px;
+    text-align: left;
+    padding: 150px;
+    }
 }
 
+.div-pedidos{
+    width: 310px;
+    height: 450px;
+    text-align: center;
+    margin: 13px;
+    border: 5px solid brown;
+}
+
+.sec-populares{
+    padding: 150px;
+    div{
+        div{
+            a{
+            color:rgb(255, 222, 172);
+            background-color: brown;
+            border-radius: 10px;
+            padding: 5px;
+            width: 100%;
+            &:hover{
+            background-color: bisque;
+            color: brown;
+            transition: 0.2s;
+            }
+            }
+            h3{
+            margin: 30px;
+            }
+        }
+    }
+}
+
+.populares{
+    color: rgb(181, 31, 31);
+    font-size: 50px;
+    text-align: center;
+}
+
+.gratis{
+    text-align: center;
+    margin: 40px;
+}
+
+.div-populares{
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.despacho{
+    display: flex;
+    justify-content: center;
+}
+
+.llevar{
+    margin: 30px;
+}
+
+.flex-pedidos{
+    .pedir{
+    margin: 100px;
+    text-align: center;
+    }
+    form{
+        label{
+        margin: 20px;
+        }
+    }
+}
 
 /* ----------------CONTACTO---------------- */
 
@@ -354,11 +389,16 @@ p{
 }
 .imagen-contacto{
     h1{
-        font-size: 70px;
+    font-size: 55px;
     line-height: 700px;
     text-align: left;
     padding: 50px;
     }
+}
+
+.mapa{
+    height: 500px;
+    width: 700px;
 }
 
 .referencias{
@@ -379,16 +419,31 @@ p{
     margin: 30px;
 }
 .datos{
+    margin: 30px;
+    h3{
+    font-size: 40px;
+    }
     a{
-        color: $color-contraste;
-        &:hover{
-            color:  $color-link;
-        }
+    color: $color-contraste;
+    &:hover{
+    color:  $color-link;
+    transition: 0.1s;
+    }
     }
     
 }
 
-.grid-contenedor{
-    display: flex;
-    justify-content: space-between;
+.btn-2{
+    color:  rgba(255, 222, 172, 0.947);
+    border: 2px brown;
+    background-color: brown;
+    &:hover{
+    color:brown;
+    background-color: rgba(255, 222, 172, 0.947);
+    }
+    &:active{
+    background-color: rgba(255, 222, 172, 0.947)!important;
+    color: brown!important; 
+    }
 }
+

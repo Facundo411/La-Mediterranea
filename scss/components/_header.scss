@@ -1,7 +1,7 @@
 /*---------Header-----------*/
 
 header{
-     // background-color: $color-contraste;
+     background-color: brown;
      nav{
           div{
                a{
@@ -12,17 +12,26 @@ header{
 }
 
 .btn{
-//     color: $color-neutro;
-//     border: 2px solid $color-neutro!important;
+    color: rgba(255, 222, 172, 0.947);
+    border: 2px solid rgba(255, 222, 172, 0.947)!important;
     &:hover{
-//     color: $color-contraste;
-//     background-color: $color-neutro;
+    color: brown;
+    background-color: rgba(255, 222, 172, 0.947);
+    }
+    &:active{
+     color: brown!important;
+     background-color: rgba(255, 222, 172, 0.947)!important;
     }
 }
 
 .nav-link{
-//     color: $color-neutro;
+    color: rgba(255, 222, 172, 0.947);
     &:hover{
-//     color: $color-link;
+    color:  rgb(255, 196, 0);
+    transition: 1s;
     }
+}
+
+.mediterranea{
+    font-size: 60px;
 }

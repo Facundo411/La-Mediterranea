@@ -118,13 +118,19 @@ h2{
 }
 
 .nosotros div img{
-    height: 400px;
+    height: 200px;
 }
 
 
 .nuestros-productos h2{
     text-align: center;
     margin: 80px;
+}
+
+.nuestros-productos div div h3{
+    font-size: 30px;
+    text-align: center;
+    margin: 25px;
 }
 
 .nuestros-productos div a{
@@ -158,11 +164,6 @@ main section div a{
     margin: 13px;
     border: 5px solid brown;
 }
-.nuestros-productos div div h3{
-    font-size: 30px;
-    text-align: center;
-    margin: 25px;
-}
 
 p{
     font-size: 20px;
@@ -171,16 +172,14 @@ p{
 
 /*------------FOOTER-----------*/
 
+footer{
+    background-color: brown;
+    font-size: larger;
+}
 
 footer a{
     text-decoration: none;
     margin: 20px;
-}
-footer{
-    background-color: brown;
-    font-size: larger;
-    
-
 }
 
 footer div div h2{
@@ -260,6 +259,7 @@ footer div div h2{
 .moto{
     margin: 25px;
 }
+
 .grid-img{
     display: flex;
     justify-content: space-between;
@@ -308,48 +308,6 @@ footer div div h2{
     margin: 15px;
 }
 
-.catalogo-facturas{
-    height: 500px;
-    margin: 55px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 400px;
-    gap: 10px;
-}
-
-.catalogo-facturas div img{
-    width: 100%;
-    height: 100%;
-}
-
-.catalogo-tartas{
-    height: 500px;
-    margin: 55px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 400px;
-    gap: 10px;
-}
-
-.catalogo-tartas div img{
-    width: 100%;
-    height: 100%;
-}
-
-.catalogo-galletitas{
-    height: 500px;
-    margin: 55px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 400px;
-    gap: 10px;
-}
-
-.catalogo-galletitas div img{
-    width: 100%;
-    height: 100%;
-}
-
 
  /* ------------------PEDIDOS------------------ */
 
@@ -379,18 +337,6 @@ footer div div h2{
 .sec-populares{
     padding: 150px;
 }
-
-.populares{
-    color: rgb(181, 31, 31);
-    font-size: 50px;
-    text-align: center;
-}
-
-.gratis{
-    text-align: center;
-    margin: 40px;
-}
-
 .sec-populares div a{
     color:   rgb(255, 222, 172);
     background-color: brown;
@@ -408,6 +354,18 @@ footer div div h2{
 .sec-populares div div h3{
     margin: 30px;
 }
+
+.populares{
+    color: rgb(181, 31, 31);
+    font-size: 50px;
+    text-align: center;
+}
+
+.gratis{
+    text-align: center;
+    margin: 40px;
+}
+
 
 .div-populares{
     display: flex;
@@ -433,8 +391,6 @@ footer div div h2{
     margin: 20px;
 
 }
-
-
 
 
 /* ----------------CONTACTO---------------- */
@@ -485,13 +441,6 @@ footer div div h2{
     transition: 0.1s;
 }
 
-.grid-contenedor{
-    display: grid;
-    grid-template-columns: repeat(1, 400px);
-    grid-template-rows: repeat(5, 60px);
-    margin: 50px;
-}
-
 .btn-2{
     color:  rgba(255, 222, 172, 0.947);
     border: 2px brown;
@@ -520,7 +469,7 @@ footer div div h2{
     height: 650px;
     }
     .div-populares{
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     
 
 }

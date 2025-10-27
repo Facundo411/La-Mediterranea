@@ -5,9 +5,8 @@ footer{
     font-size: larger;
     div{
         div{
-            a{
-            text-decoration: none;
-            margin: 20px;
+            h2{
+            font-size: 35px;
             }
             a{
             text-decoration: none;
@@ -15,9 +14,17 @@ footer{
             }
         }
         div{
+            h2{
+            font-size: 35px;
+            }
             a{
             text-decoration: none;
             margin: 20px;
+            }
+        }
+        div{
+            h2{
+            font-size: 35px;
             }
         }
     }
@@ -28,6 +35,7 @@ footer{
     font-size: 40px;
     &:hover{
         color: rgb(255, 196, 0);
+        transition: 1s;
     }
 }
 
